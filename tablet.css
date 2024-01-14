@@ -1,5 +1,4 @@
-/* responcive for mobile  */
-@media screen and (max-width: 576px){
+@media screen and (min-width: 576px) and (max-width: 960px){
     header {
         width: 100%;
         padding: 0;
@@ -7,19 +6,17 @@
     .nav-container {
        flex-direction: column;
     }
-    .nav-container ul {
-        flex-direction: column;
-    }
     .camera-section {
-      flex-direction: column;
+        flex-direction: column;
+      
+      }
+      .camera-photo, .camera-photo img{
+        width: 100%;
     
     }
-    .camera-content h1,.camera-content p{
-        width: 100%;
-        height: 100%;
-    }
-    .camera-photo, .camera-photo img{
-        width: 100%;
+    .camera-photo{
+        background-repeat: no-repeat;
+        background-position: right;
     }
     body{
         margin: 0 auto ;
@@ -28,12 +25,12 @@
         margin: 0 auto;
     }
     .client-company {
-        flex-direction: column;
-        gap: 15px;
+      justify-content: space-between;
+        /* gap: 25px; */
     }
     .popula-section {
         
-        grid-template-columns:  1fr;
+        grid-template-columns:  1fr 1fr;
     }
     .featured-products {
         flex-direction: column;
